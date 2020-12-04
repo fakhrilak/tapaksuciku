@@ -1,0 +1,19 @@
+.Container-Pertandingan{
+    padding-top: 100px;
+    width: 70%;
+    margin-left: 15%;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.Content-Pertandingan{
+    background-image: linear-gradient(to right,#E55D87, #5FC3E4);
+    height: 200px;
+    line-height: 150px;
+    border-radius: 20px;
+}
+
+.Content-Pertandingan h1{
+    text-align: center;
+}

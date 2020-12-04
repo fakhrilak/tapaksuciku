@@ -1,0 +1,17 @@
+.Container-About{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border: 2px solid #E55D87;
+    background-image: linear-gradient(to right,#E55D87, #5FC3E4);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.Container-About p{
+    margin: 50px;
+}
+
+.Container-About h1{
+    text-align: left;
+    margin-left: 50px;
+}

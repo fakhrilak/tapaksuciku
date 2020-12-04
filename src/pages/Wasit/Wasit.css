@@ -1,0 +1,87 @@
+.Container-Wasit{
+    width: 90%;
+    margin-left: 5%;
+}
+.monitor{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    gap: 3rem;
+}
+.keyboard{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    gap: 3rem;
+}
+.keyboard-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.Button-biru{
+    width: 150px;
+    height: 70px;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bolder;
+    background-color: #2e5dc2;
+    border: none;
+}
+
+.Button-kuning{
+    width: 150px;
+    height: 70px;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bolder;
+    background-color: #c6e228;
+    border: none;
+}
+
+table{
+    border-collapse: collapse;
+    font-family: arial;
+    color:#5E5B5C;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+thead th{
+    text-align: left;
+    padding: 10px;
+}
+
+tbody td{
+    border-top: 1px solid #e3e3e3;
+    padding: 10px;
+}
+
+tbody tr:nth-child(even){
+    background: #F6F5FA;
+}
+
+tbody tr:hover{
+    background: #b4b4bb
+}
+
+.Sudut-Biru{
+    margin: auto;
+    width: 300px;
+    height: 30px;
+    background-color: #2e5dc2;
+    border-radius: 5px;
+}
+
+.Sudut-Kuning{
+    border-radius: 5px;
+    height: 30px;
+    margin: auto;
+    width: 300px;
+    background-color: #c6e228;
+}
+
+.Container-Wasit input{
+    margin-bottom: 40px;
+    border-radius: 5px;
+    
+}

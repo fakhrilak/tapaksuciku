@@ -1,0 +1,9 @@
+.Content-Home{
+    padding-top: 100px;
+    background-image: linear-gradient(to right,#E55D87, #5FC3E4);
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+.Content-Home img{
+    height: 500px;
+}

@@ -1,0 +1,25 @@
+.Container-Peserta{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.Container-Peserta select{
+    margin: 20px;
+    width: 100px;
+    background-image: linear-gradient(to right,#E55D87, #5FC3E4);
+    float: left;
+    border-radius: 5px;
+    height: 25px;
+}
+.Container-Peserta option{
+    background-color: #E55D87;
+}
+.wrapper-peserta{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 1rem;
+    text-align: left;
+}
+.card-peserta{
+    background-image: linear-gradient(to right,#E55D87, #5FC3E4);
+    border-radius: 10px;
+}

@@ -1,0 +1,46 @@
+
+.LS-Kuning{
+    background-color: #c6e228;
+    width: 100px;
+}
+.LS-Biru{
+    background-color: #2e5dc2;
+    width: 100px;
+}
+table{
+    border-collapse: collapse;
+    font-family: arial;
+    color:#5E5B5C;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+thead th{
+    text-align: center;
+    padding: 10px;
+}
+
+tbody td{
+    border-top: 1px solid #e3e3e3;
+    padding: 10px;
+    max-width: 200px;
+}
+.TD-Kuning{
+    width: 95px;
+    border: 3px solid #c6e228;
+    font-size: 40px;
+
+}
+.TD-Biru{
+    width: 95px;
+    border: 3px solid #2e5dc2;
+    font-size: 40px;
+    
+}
+tbody tr:nth-child(even){
+    background: #F6F5FA;
+}
+
+tbody tr:hover{
+    background: #b4b4bb
+}

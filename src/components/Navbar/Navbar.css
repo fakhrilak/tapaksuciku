@@ -1,0 +1,46 @@
+.Container-Navbar{
+    background-image: linear-gradient(to right,#E55D87, #5FC3E4);
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.Container-Navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-right: 40px;
+  }
+  
+.Container-Navbar li {
+    float: right;
+    margin: 10px;
+  }
+  .btn-login{
+    padding-top: 25px;
+    margin-inline-end: 20;
+    
+  }
+    li a {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 16px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 0.8;
+  }
+  li button{
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    border-width: 2px;
+    border-color: linear-gradient(to right,#E55D87, #5FC3E4);
+    color: black;
+    background-image: linear-gradient(to right,#E55D87, #5FC3E4);
+  }

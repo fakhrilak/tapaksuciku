@@ -1,0 +1,12 @@
+.Container-Bagan select{
+    margin: 20px;
+    width: 200px;
+    background-image: linear-gradient(to right,#E55D87, #5FC3E4);
+    float: left;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.Container-Bagan option{
+    background-color: #E55D87;
+}

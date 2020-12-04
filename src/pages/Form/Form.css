@@ -1,0 +1,32 @@
+.Container-Form{
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+    background-image: linear-gradient(to right,#E55D87, #5FC3E4);
+}
+.Container-Form input{
+    margin: 20px;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.Container-Form select{
+    margin: 20px;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.Container-Form button{
+    margin: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: bolder;
+    background-image: linear-gradient(to right,#E55D87, #5FC3E4);
+}

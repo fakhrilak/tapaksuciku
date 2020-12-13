@@ -1,4 +1,8 @@
 
+.Container-LiveScore{
+    min-height: 500px;
+}
+
 .LS-Kuning{
     background-color: #c6e228;
     width: 100px;
@@ -8,6 +12,7 @@
     width: 100px;
 }
 table{
+    background-color: #ffffff;
     border-collapse: collapse;
     font-family: arial;
     color:#5E5B5C;

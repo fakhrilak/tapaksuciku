@@ -1,0 +1,44 @@
+.Container-Random{
+    width: 100%;
+    min-height: 500px;
+}
+.Container-Random select{
+    margin: 20px;
+    width: 200px;
+    background-image: linear-gradient(to right,#E55D87, #5FC3E4);
+    float: left;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.Container-Random option{
+    background-color: #E55D87;
+}
+
+.Container-Random button{
+    margin: 20px;
+    width: 200px;
+    background-image: linear-gradient(to right,#E55D87, #5FC3E4);
+    float: left;
+    border-radius: 5px;
+    height: 40px;
+}
+
+table{
+    font-family: arial;
+    color:#5E5B5C;
+    margin-top: 20px;
+    float: left;
+    border:2px solid #E55D87;
+    width: 100%;
+}
+
+thead th{
+    text-align: center;
+    padding: 10px;
+}
+
+tbody td{
+    border-top: 1px solid #e3e3e3;
+    padding: 10px;
+}

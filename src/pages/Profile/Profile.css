@@ -3,12 +3,15 @@
     padding-top: 100px;
     margin-left: 15%;
     text-align: left;
+    font-family: 'Times New Roman', Times, serif;
 }
 .Container-Profile img{
     height: 250px;
     text-align: left;
 }
-
+.Grid-Buttom{
+    width: 100%;
+}
 .Content-Profile{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -30,9 +33,7 @@
     grid-template-columns: 1fr 1fr 2fr;
     gap: 1rem;
 }
-.profile{
-    
-}
+
 .grid-pertandingan{
     background-image: linear-gradient(to right,#E55D87, #5FC3E4);
     margin: 50px;
@@ -59,4 +60,50 @@
     color: black;
     background-image: linear-gradient(to right,#E55D87, #5FC3E4);
     margin-right: 20px;
+}
+
+@media screen and (max-width:480px){
+    .Container-Profile{
+        width: 98%;
+        padding-top: 100px;
+        margin-left: 1%;
+        text-align: left;
+    }
+    .Grid-Buttom h1{
+        font-size: 16px;
+    }
+    .Container-Profile h1{
+        font-size: 23px;
+    }
+    .Container-Profile h4{
+        font-size: 12px;
+    }
+    .Container-Profile h2{
+        font-size: 20px;
+    }
+    .Container-Profile img{
+        height: 100px;
+        text-align: left;
+    }
+    .SubContent{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 1rem;
+    }
+
+    .grid-pertandingan{
+        background-image: linear-gradient(to right,#E55D87, #5FC3E4);
+        margin: 20px;
+        border-radius: 20px;
+    }
+    .grid-pertandingan h1{
+        margin-top: 10px;
+        padding-top: 10px;
+        margin-left: 20px;
+    }
+    
+    .grid-pertandingan h3{
+        margin-left: 20px;
+        padding-bottom: 10px;
+    }
 }

@@ -1,0 +1,15 @@
+.Container-Foother{
+    margin-top: 40px;
+    background-image: linear-gradient(to right,#ce2e61, #3399ff);
+}
+
+.Container-Foother footer{
+    padding-top: 10px;
+}
+
+@media screen and (max-width:480px){
+    .Container-Foother{
+        margin-top: 0px;
+        background-image: linear-gradient(to right,#ce2e61, #3399ff);
+    }
+}

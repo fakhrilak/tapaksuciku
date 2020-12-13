@@ -1,19 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect} from 'react'
 import "./Peserta.css"
 import {Data,Kelas} from "./Data"
-const Peserta = () => {
+import {connect} from "react-redux"
+import {getKejuaraanId} from "../../redux/actions/kejuaraan"
+import gambar from "../../img/logo.png"
+const Peserta = ({kejuaraan:{kejuaraanId:{Daftars}},id,getKejuaraanId}) => {
     const [kelas,setKelas] = useState("ALL")
+    useEffect(() => {
+        getKejuaraanId(id)
+    }, [])
     let data = []
-    if (kelas === "ALL"){
-        data = [...Data]
+    if(Daftars){
+        if (kelas === "ALL"){
+        data = [...Daftars]
     }      
     else{
-       data=Data.filter(e=>e.kelas===kelas) 
+       data = Daftars.filter(data => data.kelas === kelas) 
     }
+    }
+    
     var A = [...data]
     const OnChange=(e)=>{
         setKelas(e.target.value)
     }
+    console.log(data)
     return (
         <div className="Container-Peserta">
             <h3 style={{float:"left"}}>{A.length}</h3>
@@ -28,11 +38,15 @@ const Peserta = () => {
             </select>
             <div className="wrapper-peserta">
                 {data.map((data,index)=>(
-                    <div key={index} className="card-peserta">
-                        <div style={{margin:5}}>
-                        <h3>NAMA : {data.nama}</h3>
-                        <h4>KONTINGEN : {data.kontingen}</h4>
-                        <h5>KELAS : {data.kelas}</h5>
+                     <div className="col-md-3 col-sm-6" key={index}>
+                        <div className="our-team">
+                                <div className="pic">
+                                    <img src={gambar}/>
+                                </div>
+                                <div className="team-contenT">
+                                    <h3 className="title">{data.nama}</h3>
+                                    <span className="post">{data.kontingen}{", "} {data.kelas}</span>
+                                </div>
                         </div>
                     </div>
                 ))}
@@ -41,4 +55,10 @@ const Peserta = () => {
     )
 }
 
-export default Peserta
+const mapStateToProps = (state) => ({
+    kejuaraan : state.kejuaraan,
+    daftar : state.daftar,
+    table : state.table
+});
+
+export default connect(mapStateToProps, {getKejuaraanId})(Peserta);

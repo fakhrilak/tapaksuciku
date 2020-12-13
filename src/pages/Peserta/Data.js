@@ -107,58 +107,58 @@ export const Kelas =[
         kelas:"ALL"
     },
     {
-        kelas:"APA"
+        kelas:"A PA"
     },
     {
-        kelas:"BPA"
+        kelas:"B PA"
     },
     {
-        kelas:"CPA"
+        kelas:"C PA"
     },
     {
-        kelas:"DPA"
+        kelas:"D PA"
     },
     {
-        kelas:"EPA"
+        kelas:"E PA"
     },
     {
-        kelas:"FPA"
+        kelas:"F PA"
     },
     {
-        kelas:"GPA"
+        kelas:"G PA"
     },
     {
-        kelas:"HPA"
+        kelas:"H PA"
     },
     {
-        kelas:"IPA"
+        kelas:"I PA"
     },
     {
-        kelas:"API"
+        kelas:"A PI"
     },
     {
-        kelas:"BPI"
+        kelas:"B PI"
     },
     {
-        kelas:"CPI"
+        kelas:"C PI"
     },
     {
-        kelas:"DPI"
+        kelas:"D PI"
     },
     {
-        kelas:"EPI"
+        kelas:"E PI"
     },
     {
-        kelas:"FPI"
+        kelas:"F PI"
     },
     {
-        kelas:"GPI"
+        kelas:"G PI"
     },
     {
-        kelas:"HPI"
+        kelas:"H PI"
     },
     {
-        kelas:"IPI"
+        kelas:"I PI"
     },
 
 ]

@@ -1,42 +1,33 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import { Data } from '../../pages/Peserta/Data'
 import "./Bracket.css"
 import Buildbracket from "./BuilBracket"
+import axios from "axios"
+const Bracket = ({data,table,setHeight}) => {
+    const [triger,setTriger] = useState(false)
+    useEffect(() => {
 
-const Bracket = ({data}) => {
-    
+    }, [triger,!triger])
+
     const layer = []
 
-        let param = data.length * 2
+        let param = data
 
         while (param !== 1) {
             param = param/2
             layer.push(param)
-        }    
-        
-        let result = []
-        let tot = []
-        let left = 0
-        let top = 200
-        for(let a=0;a<layer.length;a++){            
-            for(let b = 0;b<layer[a];b++){
-                tot.push({
-                        nama:"",
-                        nilai:""
-                    })
-            }
         }
     return (
         <div className="Container-Bracket">
-            <div>
+            {table.length >0 && <div>
                 <Buildbracket
-                heigh={top}
-                width={left}
-                data ={data}
-                table = {tot}
+                table = {table}
                 layer = {layer}
+                triger={triger}
+                setTriger={setTriger}
+                setHeight={setHeight}
                 />
-            </div>
+            </div>}
         </div>
     )
 }

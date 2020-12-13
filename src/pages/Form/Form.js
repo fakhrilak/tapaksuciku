@@ -1,23 +1,75 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Form.css"
-const Form = () => {
+import {connect} from "react-redux"
+import {getKejuaraanId} from "../../redux/actions/kejuaraan"
+import {postDaftar} from "../../redux/actions/Daftar"
+import {Reset} from "../../redux/actions/clear"
+const Form = ({daftar:{message,errorDaftar}
+    ,id,
+    kejuaraan:{kejuaraanId,error},
+    getKejuaraanId,
+    postDaftar,
+    Reset
+}) => {
     const [gender,setGender]= useState("false")
+    const [formData, setFormData] = useState({
+        fullnama: "",
+        kontingen: "",
+        kelas: "",
+    });
+    useEffect(()=>{
+        if(id !== 0 ){
+            getKejuaraanId(id)
+        }
+        if(message){
+            alert(message)
+            setFormData({
+            fullnama: "",
+            kontingen: "",
+            kelas: "",
+            })
+        }
+    },[id,message])
+    const onChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+      };
+    
+    const { fullnama,kontingen,kelas } = formData;
+
     const OnChange=(e)=>{
         setGender(e.target.value)
     }
 
-    return (
-        <div className="Container-Form">
-            <form>
+    const Onsubmit =(e)=>{
+        e.preventDefault();
+        postDaftar(fullnama,kelas,kontingen,id)
+        setTimeout(()=>{
+          Reset()  
+        },2000)       
+    }
+    return kejuaraanId ? (
+        <div>
+           {kejuaraanId.length !== 0 && <h1>{kejuaraanId.nama}</h1>}
+        <div className="Container-Form" >
+            <form onSubmit={(e)=>Onsubmit(e)}>
                 <div style={{paddingTop:20}}>
+                <p>{errorDaftar}</p>
                    <input
-                placeholder="Nama Lengkap"
-                /> 
+                    placeholder="Nama Lengkap"
+                    type="text"
+                    value={fullnama}
+                    name="fullnama"
+                    onChange={(e) => onChange(e)}
+                    /> 
                 </div>
                 <div>
                     <input
-                placeholder="Kontingen"
-                />
+                    placeholder="Kontingen"
+                    type="text"
+                    value={kontingen}
+                    name="kontingen"
+                    onChange={(e) => onChange(e)}
+                    />
                 </div>
                 <div>
                     <select 
@@ -29,30 +81,40 @@ const Form = () => {
                     </select>
                 </div>
                 {gender === "false" && <div>
-                    <select>
-                        <option>A PA</option>
-                        <option>B PA</option>
-                        <option>C PA</option>
-                        <option>D PA</option>
-                        <option>E PA</option>
-                        <option>F PA</option>
-                        <option>G PA</option>
-                        <option>H PA</option>
-                        <option>I PA</option>
+                    <select
+                    name="kelas"
+                    value={kelas}
+                    onChange={(e) => onChange(e)}
+                    >
+                        <option value="" unselectable >Select Kelas Laki-Laki</option>
+                        <option value="A PA">A PA</option>
+                        <option value="B PA">B PA</option>
+                        <option value="C PA">C PA</option>
+                        <option value="D PA">D PA</option>
+                        <option value="E PA">E PA</option>
+                        <option value="F PA">F PA</option>
+                        <option value="G PA">G PA</option>
+                        <option value="H PA">H PA</option>
+                        <option value="I PA">I PA</option>
                     </select>
                 </div>}
                 {gender === "true"&& 
                 <div>
-                    <select>
-                        <option>A PI</option>
-                        <option>B PI</option>
-                        <option>C PI</option>
-                        <option>D PI</option>
-                        <option>E PI</option>
-                        <option>F PI</option>
-                        <option>G PI</option>
-                        <option>H PI</option>
-                        <option>I PI</option>
+                    <select
+                    name="kelas"
+                    value={kelas}
+                    onChange={(e) => onChange(e)}
+                    >
+                        <option value="" unselectable >Select Kelas Perempuan</option>
+                        <option value="A PI">A PI</option>
+                        <option value="B PI">B PI</option>
+                        <option value="C PI">C PI</option>
+                        <option value="D PI">D PI</option>
+                        <option value="E PI">E PI</option>
+                        <option value="F PI">F PI</option>
+                        <option value="G PI">G PI</option>
+                        <option value="H PI">H PI</option>
+                        <option value="I PI">I PI</option>
                     </select>
                 </div>}
                 <div>
@@ -60,7 +122,13 @@ const Form = () => {
                 </div>              
             </form>
         </div>
-    )
+        </div>
+    ):null
 }
 
-export default Form
+const mapStateToProps = (state) => ({
+    daftar :state.daftar,
+    kejuaraan :state.kejuaraan
+});
+
+export default connect(mapStateToProps, {getKejuaraanId,postDaftar,Reset})(Form);

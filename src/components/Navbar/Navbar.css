@@ -1,11 +1,10 @@
 .Container-Navbar{
-    background-image: linear-gradient(to right,#E55D87, #5FC3E4);
+    background-image: linear-gradient(to right,#E55D87, #3399ff);
     color: white;
     position: fixed;
     width: 100%;
     z-index: 2;
 }
-
 .Container-Navbar ul {
     list-style-type: none;
     margin: 0;
@@ -20,10 +19,10 @@
   }
   .btn-login{
     padding-top: 25px;
-    margin-inline-end: 20;
+    margin-inline-end: 0;
     
   }
-    li a {
+  .Container-Navbar a {
     display: block;
     font-weight: bold;
     text-align: center;
@@ -33,14 +32,41 @@
     cursor: pointer;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     opacity: 0.8;
+    color: #1d548b;
   }
-  li button{
+  .Container-Navbar button{
     width: 100px;
     height: 30px;
+    border: 1px solid #ffffff;
     border-radius: 6px;
     font-weight: bold;
-    border-width: 2px;
     border-color: linear-gradient(to right,#E55D87, #5FC3E4);
-    color: black;
-    background-image: linear-gradient(to right,#E55D87, #5FC3E4);
+    color: #ffffff;
+    background-image: linear-gradient(to right,#E55D87, #3399ff);
+  }
+
+  @media screen and (max-width:480px){
+
+    li a {
+      display: block;
+      font-weight: bold;
+      text-align: center;
+      padding-left: 6px;
+      padding-bottom: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      opacity: 0.8;
+      color: #1d548b;
+    }
+    li button{
+      width: 70px;
+      height: 30px;
+      border: 1px solid #ffffff;
+      border-radius: 6px;
+      font-weight: bold;
+      border-color: linear-gradient(to right,#E55D87, #5FC3E4);
+      color: #ffffff;
+      background-image: linear-gradient(to right,#E55D87, #3399ff);
+    }
   }

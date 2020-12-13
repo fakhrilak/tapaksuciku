@@ -1,6 +1,6 @@
 export const Data = [
     {
-        judul:"KETUA PERTANDINGAN"
+        judul:"KETUA"
     },
     {
         judul:"WASIT 1"
@@ -24,12 +24,15 @@ export const Data = [
         judul:"BAGAN"
     },
     {
+        judul:"RANDOM"
+    },
+    {
         judul:"JADWAL"
     },
     {
         judul:"PESERTA"
     },
     {
-        judul:"FORM PENDAFTARAN"
+        judul:"FORM"
     }
 ]

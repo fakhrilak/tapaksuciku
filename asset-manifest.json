@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/tapaksuciku/static/css/main.91a61581.chunk.css",
-    "main.js": "/tapaksuciku/static/js/main.e61243c8.chunk.js",
-    "main.js.map": "/tapaksuciku/static/js/main.e61243c8.chunk.js.map",
-    "runtime-main.js": "/tapaksuciku/static/js/runtime-main.77d90083.js",
-    "runtime-main.js.map": "/tapaksuciku/static/js/runtime-main.77d90083.js.map",
-    "static/js/2.1c87742f.chunk.js": "/tapaksuciku/static/js/2.1c87742f.chunk.js",
-    "static/js/2.1c87742f.chunk.js.map": "/tapaksuciku/static/js/2.1c87742f.chunk.js.map",
-    "static/js/3.c183d35a.chunk.js": "/tapaksuciku/static/js/3.c183d35a.chunk.js",
-    "static/js/3.c183d35a.chunk.js.map": "/tapaksuciku/static/js/3.c183d35a.chunk.js.map",
+    "main.css": "/tapaksuciku/static/css/main.7874c5b0.chunk.css",
+    "main.js": "/tapaksuciku/static/js/main.124f9f66.chunk.js",
+    "main.js.map": "/tapaksuciku/static/js/main.124f9f66.chunk.js.map",
+    "runtime-main.js": "/tapaksuciku/static/js/runtime-main.88940b9b.js",
+    "runtime-main.js.map": "/tapaksuciku/static/js/runtime-main.88940b9b.js.map",
+    "static/css/2.751a9f5e.chunk.css": "/tapaksuciku/static/css/2.751a9f5e.chunk.css",
+    "static/js/2.b8b1bd57.chunk.js": "/tapaksuciku/static/js/2.b8b1bd57.chunk.js",
+    "static/js/2.b8b1bd57.chunk.js.map": "/tapaksuciku/static/js/2.b8b1bd57.chunk.js.map",
     "index.html": "/tapaksuciku/index.html",
-    "static/css/main.91a61581.chunk.css.map": "/tapaksuciku/static/css/main.91a61581.chunk.css.map",
-    "static/js/2.1c87742f.chunk.js.LICENSE.txt": "/tapaksuciku/static/js/2.1c87742f.chunk.js.LICENSE.txt",
-    "static/media/logo.b86a928f.png": "/tapaksuciku/static/media/logo.b86a928f.png",
-    "static/media/logo1.1c0c4e10.png": "/tapaksuciku/static/media/logo1.1c0c4e10.png"
+    "precache-manifest.e105ae82ccfb632469cc9b74c30dc2b5.js": "/tapaksuciku/precache-manifest.e105ae82ccfb632469cc9b74c30dc2b5.js",
+    "service-worker.js": "/tapaksuciku/service-worker.js",
+    "static/css/2.751a9f5e.chunk.css.map": "/tapaksuciku/static/css/2.751a9f5e.chunk.css.map",
+    "static/css/main.7874c5b0.chunk.css.map": "/tapaksuciku/static/css/main.7874c5b0.chunk.css.map",
+    "static/js/2.b8b1bd57.chunk.js.LICENSE.txt": "/tapaksuciku/static/js/2.b8b1bd57.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/tapaksuciku/static/media/logo.e44543eb.png",
+    "static/media/logo1.png": "/tapaksuciku/static/media/logo1.a517d074.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.77d90083.js",
-    "static/js/2.1c87742f.chunk.js",
-    "static/css/main.91a61581.chunk.css",
-    "static/js/main.e61243c8.chunk.js"
+    "static/js/runtime-main.88940b9b.js",
+    "static/css/2.751a9f5e.chunk.css",
+    "static/js/2.b8b1bd57.chunk.js",
+    "static/css/main.7874c5b0.chunk.css",
+    "static/js/main.124f9f66.chunk.js"
   ]
 }
